@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <typeAliases>
+      <typeAlias type="com.mega.mvcproject02.ProductVO" alias="productVO"></typeAlias>
+      <!-- 앞에 있는 경로가 기니까 alias로 짧게 호출할 수 있다. -->
+      <!-- 내가 사용할 VO경로를 지정해준다. 입력값을 받아오는 처리 과정 -->
+   </typeAliases>
+   <mappers>
+      <mapper resource="mapper/productMapper.xml" />
+      <!-- 입력값을 받아서 처리해줄 맵핑 경로 설정 -->
+   </mappers>
+</configuration>
